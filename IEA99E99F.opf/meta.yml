@@ -1,0 +1,23 @@
+id: IEA99E99F
+source: https://www2.hf.uio.no/polyglotta/index.php?page=library&bid=2
+source_file: null
+initial_creation_type: input
+imported: '2022-05-27T14:54:20.257939'
+last_modified: '2022-05-27T14:54:20.257951'
+parser: null
+source_metadata:
+  title: Dīrghāgama, sūtras no. 35-41
+  language: bo
+  base:
+    f674F:
+      title: Complete text
+      base_file: f674F.txt
+      order: 1
+  chapter_to_tile: {}
+statistics: {}
+quality: {}
+copyright:
+  status: Unknown
+  notice: ''
+  info_url: null
+license: null

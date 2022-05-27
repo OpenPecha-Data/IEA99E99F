@@ -1,0 +1,349 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Bibliotheca Polyglotta</title>
+<link rel='stylesheet' type='text/css' href='css/bp.css'>
+<link rel='stylesheet' type='text/css' href='css/diac_doc.css'>
+
+<link rel='stylesheet' type='text/css' href='css/imageGallery.css'>
+<link rel='stylesheet' type='text/css' href='css/ss.css'>
+	      <link rel='stylesheet' type='text/css' href='css/tree_menu.css'>
+<script type="text/javascript" src="js/jquery-1.3.2.js"></script>
+<!--  <script type="text/javascript" src="js/jqModal.js"></script>-->
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/tree_menu.js"></script>
+<!-- <script src="js/analytics_tracking.js" type="text/javascript"></script> -->
+
+
+<!-- <script type="text/javascript" src="js/popupDivhandling.js"></script> -->
+<!--  <script type="text/javascript" src="jquery-latest.js"></script>
+<script type="text/javascript" src="js/jquery-imagegallery.js"></script>-->
+</head>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//vrtx.uio.no/js/analytics/v2/analytics.js','ga');
+
+ga('create', 'UA-86407471-1', 'auto');
+ga(function(tracker) {
+
+	// Modifies sendHitTask to hit ipproxy instead of http://www.google-analytics.com directly
+	tracker.set('sendHitTask', function(model) {
+		payload = model.get('hitPayload');
+		var xhr = new XMLHttpRequest();
+		xhr.open('GET', '//w3prod-ipproxy.uio.no/collect' +'?' + payload, true);
+		xhr.send();
+	});
+		ga('send', 'pageview');
+});
+</script>
+<body><div class='banner'></div><!-- banner --><div class='uiologo'>
+<a href='http://www.hf.uio.no/'><img src='https://www2.hf.uio.no/polyglotta/hfe.png' border='0'></a></div><!-- uiologo --><div class='clear'></div>
+<div class='smule_tittel'>
+<div class='brodsmuleboks'>You are here: <a href='/polyglotta/index.php' accesskey='1'> BP HOME</a> >  <a href='/polyglotta/index.php?page=library&amp;bid=2' accesskey='1'>TLB</a> > <a href='/polyglotta/index.php
+	?page=volume&amp;vid=417' accesskey='1'>Dīrghāgama, sūtras no. 35-41</a> > fulltext</div><div class='clear'></div>
+<div class='headline'>Dīrghāgama, sūtras no. 35-41<div class='clear'></div></div><!-- headline -->
+</div><!-- smule_tittel -->
+<!--<div>-->
+
+<h2 class="trigger" id="tr_lang"><a  href="#">Choose languages</a></h2>
+<h2 class="trigger" id="tr_img"><a  href="#">Choose images, etc.</a></h2>
+
+
+<div id="toggle_container_lan">
+
+<form  id="tr"  name="Sprakvalg2" action="inc/set_cookie_lan.php" method="POST">
+
+<div style="float:left; width:auto; text-align:left; margin-left:20px;">
+<h5>Choose languages</h5>
+<ul>
+<input value="Choose all" type="button" onClick="markAll('tr')"><input value="Uncheck all" type="button" onClick="markNone('tr')">
+
+	<li class="tip" title="Checkbox :: Enable text"><label class="f1_checkbox"><input type="checkbox" name="spraak_valg_ct_417[2911]" value="2911" id="lancheckbox" checked >Sanskrit: DĀ 35</label></li><li class="tip" title="Checkbox :: Enable text"><label class="f1_checkbox"><input type="checkbox" name="spraak_valg_ct_417[2912]" value="2912" id="lancheckbox" checked >German: Übersetzung</label></li><li class="tip" title="Checkbox :: Enable text"><label class="f1_checkbox"><input type="checkbox" name="spraak_valg_ct_417[2913]" value="2913" id="lancheckbox" checked >Sanskrit: Zentralasien</label></li><li class="tip" title="Checkbox :: Enable text"><label class="f1_checkbox"><input type="checkbox" name="spraak_valg_ct_417[2915]" value="2915" id="lancheckbox" checked >Tibetan: ’Dul ba phran tshegs kyi gźi</label></li><li class="tip" title="Checkbox :: Enable text"><label class="f1_checkbox"><input type="checkbox" name="spraak_valg_ct_417[2914]" value="2914" id="lancheckbox" checked >Tibetan: sMan gyi gźi</label></li><div style="clear:both"></div>
+<input type='submit' name='set_cookie' value='Save view'>
+<div style="clear:both"></div>
+
+</ul>
+<input type="hidden" name="vid" value="417">
+<input type="hidden" name="page" value="fulltext">
+</form>
+</div>
+</div>
+
+<div id="toggle_container_img">
+<form  id="tr"  name="Sprakvalg2" action="inc/set_cookie_img.php" method="POST">
+
+<div style="float:left; width:auto; text-align: left;">
+<h5>Choose display</h5>
+<ul>
+		
+	<li> 
+		<input type='checkbox' name='bilder' checked="checked" > Enable images
+	</li>
+	<li> 
+	<input type='checkbox' onclick="onOffCheckbox();" name='fotnoter' checked="checked"> Enable footnotes
+	<div id="pff" style="display:block" >
+	<ul>
+	<li><input type='radio' name='fotnote_valg'  value='show_a' checked> Show all footnotes</li>
+	<li><input type='radio' name='fotnote_valg'  value='show_h'  > Minimize footnotes</li>
+	</ul>
+	</li>
+	
+	</div>
+	<div style="float:left; width:20em; text-align: left; margin-left:120px ">
+	<div style="clear:both"></div>
+	<input type='submit' name='set_cookie' value='Save view'>
+	<div style="clear:both"></div>
+	</div>
+	
+</ul>
+<input type="hidden" name="vid" value="417">
+<input type="hidden" name="page" value="fulltext">
+</form>
+</div>
+	
+
+
+
+</div>
+</div>
+
+<div class='sok'><form name='Sok' id='FormBlock' action='/polyglotta/index.php' method='get'>
+<input type='hidden' name='page' value='search'>
+<input type='hidden' name='bid' value='2'>
+<input type='hidden' name='vid' value='417'>
+<div class='sokeboks'>
+<input name='sokefelt' id='sokeboks' type='text' size='30' value=''>
+<input type='submit' name='Sok' value='Search' id='nsubmit'>
+<div class='clear'></div><a class="diacbutton" id="diacbutton" href="#">Diacritica</a><a id="diac2button" class="diac2button"  href="#">Diacritica-help</a><a class="s2button" href="https://wiki.uio.no/hf/dmlf/index.php/Kategori:Polyglotta:Documentation:SearchHelp">Search-help</a><div class='diacritical' id='diacritical_sign'><div style="text-align: left; ">
+<table class = 'diacritica' width="200" border="1" cellpadding="1" cellspacing="1" id="diacritical">
+    <tbody>
+        <tr>
+            <td style="text-align: center; ">ā</td>
+            <td style="text-align: center; ">ī</td>
+            <td style="text-align: center; ">ū</td>
+            <td style="text-align: center; ">ṛ</td>
+            <td style="text-align: center; ">ṝ</td>
+            <td style="text-align: center; ">ḷ</td>
+        </tr>
+        <tr>
+            <td style="text-align: center; ">ḹ</td>
+            <td style="text-align: center; ">&rsquo;</td>
+            <td style="text-align: center; ">ṃ</td>
+            <td style="text-align: center; ">ḥ</td>
+            <td style="text-align: center; ">ṅ</td>
+            <td style="text-align: center; ">&ntilde;</td>
+        </tr>
+        <tr>
+            <td style="text-align: center; ">ṭ</td>
+            <td style="text-align: center; ">ḍ</td>
+            <td style="text-align: center; ">ṇ</td>
+            <td style="text-align: center; ">ṣ</td>
+            <td style="text-align: center; ">ś</td>
+            <td style="text-align: center; ">ź</td>
+        </tr>
+        <tr>
+            <td style="text-align: center; ">&scaron;</td>
+            <td style="text-align: center; ">č</td>
+            <td style="text-align: center; ">ǰ</td>
+            <td style="text-align: center; ">&gamma;</td>
+            <td style="text-align: center; ">&nbsp;</td>
+            <td style="text-align: center; ">&nbsp;</td>
+        </tr>
+    </tbody>
+</table>
+</div></div><!-- diacritical --><div id="ex3a" class="jqmDialog"><div>
+	<span style="font-size:12px;">Note on the transliteration:</span></div>
+<div>
+	<span style="font-size:12px;">The transliteration system of the BP/TLB is based on the Unicode/UTF-8 system. However, there may be difficulties with some of the letters &ndash; particularly on PC/Windows-based systems, but not so much on the Mac. We have chosen the most accepted older and traditional systems of transliteration against, e.g, Wylie for Tibetan, since with Unicode it is possible, in Sanskrit and Tibetan, etc., to represent one sound with one letter in almost all the cases (excepting Sanskrit and Tibetan aspirated letters, and Tibetan tsa, tsha, dza). We thus do not use the Wylie system which widely employs two letters for one sound (ng, ny, sh, zh etc.).</span></div>
+<div>
+	&nbsp;</div>
+<div>
+	<span style="font-size:12px;">Important:</span></div>
+<div>
+	<span style="font-size:12px;">We ask you in particular to note the use of the &rsquo; apostrophe and not the &#39; representing the avagrāha in Sanskrit, and most important the &rsquo;a-chuṅ in Tibetan. On the Mac the &rsquo; is Alt-M.</span></div>
+<div>
+	&nbsp;</div>
+<div>
+	<span style="font-size:12px;">If you cannot find the letters on your key-board, you may click on the link &quot;Diacritica&quot; to access it for your search.</span></div>
+</div><!-- diacritical_doc --><div class='clear'></div><select name='searchmode'><option selected value='phrase'>Search for exact phrase</option>
+<option  value='phraseregex'>Search for exact phrase (regex)</option>
+<option  value='word'>Search for every word in one record</option>
+<option  value='free'>Search for every word fragment in one record</option>
+</select>
+<select name='context'>
+<option ($_GET[context]=="a" ? "selected" : "") value="a"> Search in all libraries</option><option selected value="bTLB">Search in TLB</option><option selected value="v417">Search in Dīrghāgama, sūtras no. 35-41</option></select><div class='clear'></div><a class='sbutton' href='/polyglotta/index.php?page=asearch&amp;bid=2&amp;vid=417'>Choose specific texts..</a><div class='clear'></div></div></form></div><!-- sok --><div class='clear'></div><!-- clear --><div id='dcr' class='divControlRead'><div class='venstrefulltekstfelt'><div class='bverknavn'><a href='/polyglotta/index.php?page=volume&amp;vid=417'>Dīrghāgama, sūtras no. 35-41</a></div><table class="tlvl2">
+					<tr>
+						<td bgcolor="#ffffff"> &nbsp; &nbsp;
+						<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_7627.Verses41-58" border=0 hspace=2>
+						<a href="/polyglotta/index.php?page=fulltext&amp;view=fulltext&amp;vid=417" class="ajax_tree0">Complete text</a>
+						</td>
+					</tr>
+				  </table><input type="hidden" name="tree_top_options" id="tree_top_options" value=".|">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_." border=0 hspace=2><a id="href_." href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=417&mid=&level=&cid=" class="ajax_tree0">
+</td></tr></table>
+<script language=javascript>test('.|')</script><div class='bverknavn'><a href='/polyglotta/index.php?page=library&amp;bid=2'>Back to library</a></div></div><!-- venstrefulltekstfelt --><div class="clear"></div><!-- clear --><div id="nav-menu"><ul>
+  		  <li  id="nav-1"><a class="tabValgt" href="/polyglotta/index.php?page=record&amp;view=record&amp;vid=417&amp;mid=683601">Sentence by sentence view</a></li>
+  		  <li  id="nav-2"><a  href="/polyglotta/index.php?page=fulltext&amp;view=fulltext&amp;vid=417&amp;cid=&amp;mid=683601">Continuous text view</a></li>
+ 		<li  id="nav-3"><a  href="/polyglotta/admin/index.php?page=fulltext&amp;view=fulltext&amp;vid=417&amp;cid=&amp;mid=683601">View in admin</a></li>
+
+  		  </ul></div><div class='clear'></div><!-- clear -->			<script language="javascript" type="text/javascript">
+			var kilderef = '';
+			var tekstid = 0;
+			var tekstid_bilder = 0;
+			var filsti = '';
+			var thumbnail = '';
+			</script>
+		<div class='infofulltekstfelt'><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='3150614bi' class='paragraph'>
+							(410r2) bhagavāṃ kosaleṣu janapadeṣu<a class='fotnote rn' name='FN2911rn1' href='#N2911rn1'><sup>1</sup></a>
+ cārikāṃ caran‹n› icchānaṃgalām anuprāptaḥ ⁞ icchānaṃgal‹ā›yāṃ (410r3) (viharatīcchānaṃgalāyā vanaṣaṇḍe |)<a class='fotnote rn' name='FN2911rn2' href='#N2911rn2'><sup>2</sup></a>
+&nbsp;</span><span id='3304869bi' class='generelltekst'>
+						 (410r2) bhagavāṃ kosaleṣu janapadeṣu<a class='fotnote cn' name='FN2911cn1' href='#N2911cn1'><sup>1</sup></a>
+ cārikāṃ caran‹n› icchānaṃgalām anuprāp-taḥ ⁞ icchānaṃgal‹ā›yāṃ (410r3) (vihara-tīcchānaṃgalāyā vanaṣaṇḍe |)2&nbsp;</span><div style='' id='1' class='note cn'>1.<a class="internt" name='N2911cn1' href='#FN2911cn1'> Vgl. auch 35.12.1.</a>&nbsp; </div><div class='clear'></div></div></div><div class='textvar' style='width:19%;'><div class='German'><span id='3150616bi' class='paragraph'>
+							Als der Erhabene unter den Kosalas im Land umherziehend nach Icchānaṃgalā<a class='fotnote rn' name='FN2912rn1' href='#N2912rn1'><sup>1</sup></a>
+ gelangt war, hielt er sich in Icchānaṃgalā, im Walddickicht von Icchānaṃgalā auf.&nbsp;</span><span id='3304870bi' class='generelltekst'>
+						 &nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='3150618bi' class='paragraph'>
+							(SHT 978 r5) /// + icchānaṅgaliyake vanaṣaṇḍe<br />(SHT 1290c) (icchānaṅga)(v9)liy(a)ke vanaṣaṇḍe&nbsp;</span><span id='3304871bi' class='generelltekst'>
+						 &nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='3150620bi' class='paragraph'>
+							bcom ldan ’das ko sa (Q59r) la nas ljoṅs rgyu źiṅ gśegs pa na1 2’dod pa2 ’thun3 par byon nas |4 5’dod pa ’thun3 pa na5 ’dod pa6 ’thun7 pa’i nags khrod na bźugs so ||&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='3150622bi' class='paragraph'>
+							saṅs rgyas bcom ldan ’das ko sa la nas ljoṅs rgyu źiṅ gśegs pa na1 |2 ’dod pa ’thun3 par byon nas4 5’dod pa ’thun6 pa na5 ’dod pa ’thun7 pa’i nags khrod8 na bźugs so ||&nbsp;</span></div></div><div class='clear'></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='3304872bi' class='generelltekst'>
+							&nbsp;</span></div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='3304873bi' class='generelltekst'>
+							&nbsp;</span></div></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='3150615bi' class='paragraph'>
+							(tena khalu sama)yena brāhmaṇa‹ḥ› pauṣka‹ra›sāriḥ sphītām utkaṭāṃ paribhuṃkte sotsa{dātsa}dāṃ satṛṇakāṣṭhodakāṃ rājñā prasenajitā{t} kausale(410r4)(na brahmadeyaṃ dattāṃ |)<br /><br /><small>Dieser Satz ist mit welchselnden Eigennamen im DĀ mehrfach belegt, wobei das Verb in der Regel ohne langes -ā (dattaṃ) erscheint (DĀ 19: 317v6; 21: 340r3 mit kumāradeyaṃ statt brahmadeyaṃ; 28: 382r7; 33: 395v7-8, 396v5-6, 397r1-2; 34: 401r4). Weiterhin vgl. Saṅghabh II 22.4-5 und die tibetische Übersetzung (D ’Dul ba ṅa 124v6-7, Q ’Dul ba ce 119v2-3): ... Ortsname ’du taṅ daṅ bcas | rtsa (sa Q) daṅ | śiṅ daṅ | chur bcas par ... bram ze’i sbyin par byin nas ’byor pa na yoṅs su loṅs spyod do || und die auf den gleichen Wortlaut im Skt. zurückgehende tibetische Übersetzung des Bhai-v (D ’Dul ba ga 4r7-v1, Q ’Dul ba ṅe 4v1-2): ... Ortsname rgyas pa | ’du thaṅ daṅ bcas (bcas pa Q) rtsva śiṅ daṅ ’bab chur bcas pa | ... bram ze’i sbyin par byin pa la yoṅs su loṅs spyod do ||<br />Weitere Parallelen, die zwar im Wortlaut erweitert sind (mit dhānyasahagataṃ oder sadhānyabhogaiḥ sahagataṃ oder rtag du ’bru sna rnams smin), bewahren auch interessante Varianten der Eigennamen. Vgl. dazu die Einleitung zu diesem Sūtra.<br />▷ Divy 620.11-14: tasmin khalu punaḥ samaye puṣkarasārī nāma brāhmaṇa utkaṭaṃ nāma droṇamukhaṃ paribhuṅkte sma | saptotsadaṃ satṛṇakāṣṭhodakaṃ dhānyasahagataṃ rājñāgnidattena brahmadeyaṃ dattam | (vgl. auch Divy 620.21, 26-27). Zu droṇamukha vgl. Falk 2009: 198-199.<br />▷ Divy 620.28-621.2: sa cotkaṭadroṇamukhyaṃ paribhuṅkte | sasaptotsadaṃ satṛṇakāṣṭhodakaṃ sadhānyabhogaiḥ sahagataṃ rājñāgnidattena brahmadeyaṃ dattam |<br />▷ sTag rna’i rtogs pa brjod pa, tibetische Übersetzung des Śardūlakarṇāvadāna (D Nr. 358, mDo sde aḥ 237r7-v1, Q Nr. 1027, mDo khe 248r8-248v1): yaṅ dus gźan źig gi tshe | bram ze pad ma’i sñiṅ po źes bya ba gyen du ’byuṅ ba’i luṅ pa’i sgo źes bya ba na | khyab par sa (statt rtsva!) daṅ | chu daṅ | śiṅ daṅ ldan pa rtag du ’bru sna (D sna fehlt) rnams smin (D smin pa) | rgyal po me sbyin źes bya bas | bram ze de la byin nas de na gnas so ||<br />Zu den Pāli-Entsprechungen vgl. DN I 87.6-9, 111.5-8, 127.6-9, 224.4-7, II 316.7-10, MN II 164.5-8: tena kho pana samayena Personenname und Ortsname ajjhāvasati sattussadaṃ satiṇakaṭṭhodakaṃ sadhaññaṃ rājabhoggaṃ raññā Personenname und Herkunft dinnaṃ rājadāyaṃ brahmadeyyaṃ.</small>&nbsp;</span>							<script language="javascript" type="text/javascript">
+
+							tekstid = "";
+							kilderef = "   - DĀ 35 35.2, 410r3-4";
+							$('#'+tekstid).text(kilderef);
+							</script>
+					</div></div><div class='textvar' style='width:19%;'><div class='German'><span id='3150617bi' class='paragraph'>
+							Zu dieser Zeit nun erfreute sich der Brahmane Pauṣkarasāri [seines] üppigen [Gebietes] Utkaṭā, [das ihm] mit all seiner seiner Fülle(?)<a class='fotnote rn' name='FN2912rn2' href='#N2912rn2'><sup>2</sup></a>
+, mit seinem Gras, Holz und Wasser vom Kosala-König Prasenajit als Brahmanengabe<a class='fotnote rn' name='FN2912rn3' href='#N2912rn3'><sup>3</sup></a>
+ dargebracht worden war.&nbsp;</span>							<script language="javascript" type="text/javascript">
+
+							tekstid = "";
+							kilderef = "   - Übersetzung ";
+							$('#'+tekstid).text(kilderef);
+							</script>
+					</div></div><div class='textvar' style='width:19%;'><div class='Sanskrit'><span id='3150619bi' class='paragraph'>
+							(SHT 978 r6) /// brahmadeyāṃ dattām*<br />(SHT 1290c) tena khalu samayena puṣka(rasārī) /// (brahma)(v10)deyāṃ (datt)āṃ&nbsp;</span>							<script language="javascript" type="text/javascript">
+
+							tekstid = "";
+							kilderef = "   - Zentralasien ";
+							$('#'+tekstid).text(kilderef);
+							</script>
+					</div></div><div class='clear'></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='3150621bi' class='paragraph'>
+							de’i tshe bram ze 1pad ma1’i sñiṅ po źes bya ba la2 ko sa la’i rgyal po gsal rgyal3 gyis dpya4 rgyu rtsva5 daṅ6 śiṅ daṅ7 |8 chur9 bcas10 par bram ze’i sbyin gtoṅ du byin nas11 śas chen po rgyas pa la loṅs spyod do ||&nbsp;</span>							<script language="javascript" type="text/javascript">
+
+							tekstid = "";
+							kilderef = "   - sMan gyi gźi 59b1";
+							$('#'+tekstid).text(kilderef);
+							</script>
+					</div></div><div class='textvar' style='width:19%;'><div class='Tibetan'><span id='3150623bi' class='paragraph'>
+							de’i tshe bram ze 1pad ma1’i sñiṅ po źes bya ba la2 ko sa la’i rgyal po gsal rgyal3 gyis dpya4 rgyu rtsva5 daṅ6 śiṅ daṅ7 |8 chur9 bcas10 par bram ze’i sbyin gtoṅ du byin nas11 śas chen po rgyas pa la loṅs spyod do ||&nbsp;</span>							<script language="javascript" type="text/javascript">
+
+							tekstid = "";
+							kilderef = "   - ’Dul ba phran tshegs kyi gźi ";
+							$('#'+tekstid).text(kilderef);
+							</script>
+					</div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:19%;'><div style='' id='2' class='note rn'>1.<a class="internt" name='N2911rn1' href='#FN2911rn1'> Vgl. auch 35.12.1.</a>&nbsp; <br>2.<a class="internt" name='N2911rn2' href='#FN2911rn2'> Nach dem Tibetischen ergänzt. Zwar ist die Wendung noch an einer anderen Stelle des Sūtras erhalten, dort aber fehlerhaft (35.12: icchānaṃgalena vanaṣaṇḍe).</a>&nbsp; <br></div><div class='clear'></div></div><div class='textvar' style='width:19%;'><div style='' id='3' class='note rn'>1.<a class="internt" name='N2912rn1' href='#FN2912rn1'> Zu den Orts- und Personennamen und ihre tibetischen Übersetzungen siehe die Einleitung.</a>&nbsp; <br>2.<a class="internt" name='N2912rn2' href='#FN2912rn2'> Zu utsada in der Bedeutung „Fülle“, der Lesart saptotsada im Divy und sattussada im Pāli vgl. BHSD s.v. utsada(3). In diesem Sinne haben es aber nur die tibetischen Übersetzer des Śardūlakarṇāvadāna verstanden, die es mit khyab pa übersetzten. Im Gegensatz dazu findet sich in T1 und T2 dpya rgyu, in T3 steht gla (b)skyed und an den zwei anderen aufgeführten Stellen aus dem Vinayavastu steht ’du thaṅ und ’du taṅ. Alle diese Begriffen sind als „Steuereinnahmen“ zu verstehen, obgleich die Zusammensetzungen bisher nicht belegt waren. Vgl. dazu auch den Eintrag zu dpya thaṅ im BGT: khral ’ul ’jal dgos kyi thob cha’am khral ’bab. Da in der Regel eine Landschenkung an Brahmanen das Einbehalten der Steuern einschließt, wäre die Bedeutung „mit all seinen Steuereinnahmen“ für sotsada naheliegend, auch wenn sie nur aus den hier genannten tibetischen Übersetzungen gewonnen werden kann.</a>&nbsp; <br>3.<a class="internt" name='N2912rn3' href='#FN2912rn3'> In Inschriften kommt der Begriff brahmadāya, seltener auch brahmadeya vor. Zu Stellenangaben vgl. Sircar 1966 s.v. Nur in den zentralasiatischen Handschriften lautet die Form brahmadeyā. Die tibetische Variante sbyin mthoṅs für sbyin gtoṅ, die alle Textzeugnisse von T2 teilen, ist nirgends sonst belegt.</a>&nbsp; <br></div><div class='clear'></div></div><div class='textvar' style='width:19%;'></div><div class='textvar' style='width:19%;'></div><div class='textvar' style='width:19%;'></div></div><div class='clear'></div><div class="fontboks"><a onClick=onOffdiv('permlink') name="permlink" href="#permlink">Permanent link</a></div><div class='clear'></div><div class='perm_felt' id='permlink'>http://www2.hf.uio.no/common/apps/permlink/permlink.php?app=polyglotta&amp;context=ctext&amp;uid=b7eae4cb-01f7-11e4-a105-001cc4ddf0f4</div></div></div><!-- infofelt --></div><!-- divControl --><div class="clear"></div>
+<div style="clear:both"></div><div class="signatur"><div class="signatur_left">
+		<a href="https://wiki.uio.no/hf/dmlf/index.php/Kategori:Polyglotta:Documentation">Go to Wiki Documentation</a></br>Enhet: <a HREF=http://www.hf.uio.no>Det humanistiske fakultet</a> &nbsp; Utviklet av: <a href="http://www.hf.uio.no/tjenester/it">IT-seksjonen ved HF</a></div><!--signatur_left -->
+		<div class="signatur_right"><a href="/polyglotta/admin/index.php">Login</a></div>
+		<div style="clear:both"></div></div>
+</body></html><SCRIPT LANGUAGE="JAVASCRIPT">
+	
+	$("#tr_IA").click(function(){
+	    if ($("#toggle_container_IA").is(':hidden'))
+	    	$("#toggle_container_IA").show();
+	    else{
+	        $("#toggle_container_IA").hide();
+	    }
+	    return false;
+		});
+
+	$("#tr_lang").click(function(){
+	    if ($("#toggle_container_lan").is(':hidden'))
+	    	$("#toggle_container_lan").show();
+	    else{
+	        $("#toggle_container_lan").hide();
+	    }
+	    return false;
+	});
+
+	$("#tr_img").click(function(){
+	    if ($("#toggle_container_img").is(':hidden'))
+	    	$("#toggle_container_img").show();
+	    else{
+	        $("#toggle_container_img").hide();
+	    }
+	    return false;
+	});
+
+	$("#diac2button").click(function(){
+	   if ($("#ex3a").is(':hidden')){
+		   $("#ex3a").show();
+	       $("#diac2button").html("Hide&#32Diacritica-help");
+	   }else{
+	       $("#ex3a").hide();
+	       $("#diac2button").html("Diacritica-help");
+	   }
+	   return false;
+	});
+
+	$("#diacbutton").click(function(){
+	   if ($("#diacritical_sign").is(':hidden')){
+		   	$("#diacritical_sign").show();
+	      	$("#diacbutton").html("Hide&#32diacritica");
+	   }else{
+	        $("#diacritical_sign").hide();
+	        $("#diacbutton").html("Diacritica");
+	   }
+	   return false;
+    });
+
+	$('#toggle_container_IA').click(function(e) {
+	   e.stopPropagation();
+	});
+
+	$('#toggle_container_lan').click(function(e) {
+        e.stopPropagation();
+    });
+
+	$('#toggle_container_img').click(function(e) {
+        e.stopPropagation();
+    });
+
+	$('#ex3a').click(function(e) {
+	    e.stopPropagation();
+	});
+
+	$('#diacritical_sign').click(function(e) {
+        e.stopPropagation();
+    });
+
+	//Kode for å sette inn diakritiske tegn
+	$('#diacritical > tbody > tr > td').click(function() {
+	  	//alert('red');
+		$("#sokeboks").val($("#sokeboks").val() + $(this).text());
+	});
+
+	$('.diac2button').text(($('.diacbutton').text() == 'Diacritica-help') ? 'Hide Diacritica-help' : 'Diacritica-help');
+	
+	//Lukker alle åpnede pop'uper ved klikk på siden
+	$(document).click(function() {
+		$('#toggle_container_IA').hide();
+	    
+        $('#toggle_container_lan').hide();
+    
+        $('#toggle_container_img').hide();
+   
+   		$('#diacritical_sign').hide();
+   		$("#diacbutton").html("Diacritica");
+   
+       	$('#ex3a').hide();
+       	$("#diac2button").html("Diacritica-help");
+   });
+	</SCRIPT>
